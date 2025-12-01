@@ -1,0 +1,42 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* занимать всю высоту экрана */
+     width: 100%;   
+    background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .home-container h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .home-container a {
+    padding: 12px 28px;
+    background-color: #646cff;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .home-container a:hover {
+    background-color: #535bf2;
+    transform: translateY(-2px);
+  }
+  
