@@ -1,42 +1,93 @@
-html, body, #root {
+
+* {
   margin: 0;
   padding: 0;
-  height: 100%;
+  box-sizing: border-box;
+}
+
+html, body, #root {
   width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 
 .home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* занимать всю высоту экрана */
-     width: 100%;   
-    background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
-    color: #fff;
-    text-align: center;
-    padding: 40px 20px;
-  }
-  
-  .home-container h1 {
-    font-size: 2.8rem;
-    margin-bottom: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .home-container a {
-    padding: 12px 28px;
-    background-color: #646cff;
-    color: #fff;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-  }
-  
-  .home-container a:hover {
-    background-color: #535bf2;
-    transform: translateY(-2px);
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+.hero-text {
+  text-align: center;
+  margin: 30px 20px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #242424;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #555;
+}
+.car-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+  gap: 30px;
+}
+
+.slider-btn {
+  font-size: 2.5rem;
+  background-color: #646cff;
+  border: none;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slider-btn:hover {
+  background-color: #535bf2;
+  transform: translateY(-3px);
+}
+
+.car-slide {
+  text-align: center;
+  max-width: 600px; /* ограничение ширины слайда */
+}
+
+.slide-image {
+  width: 100%;
+  height: 350px; /* фиксированная высота для всех картинок */
+  object-fit: cover; /* картинка подгоняется под размеры без искажения */
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.car-slide h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.car-slide p {
+  font-size: 1.2rem;
+  color: #555;
+}

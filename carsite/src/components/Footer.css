@@ -1,0 +1,16 @@
+.footer {
+    width: 100%;                  /* обязательно 100% ширины */
+    box-sizing: border-box;        /* padding не ломает ширину */
+    background: #121212;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 40px;           /* внутренние отступы */
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.6);
+    margin-top: auto;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+  }
+  
