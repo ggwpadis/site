@@ -1,0 +1,49 @@
+.basket-container {
+    min-height: 100vh;
+    background: #0f0f0f;
+    color: #fff;
+    padding: 40px;
+  }
+  
+  .basket-card {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 15px 0;
+  }
+  
+  .basket-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .basket-actions a,
+  .basket-actions button,
+  .btn {
+    background: #646cff;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .basket-actions button {
+    background: #ff4d4d;
+  }
+  
+  .basket-form {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .basket-form input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+  }
+  

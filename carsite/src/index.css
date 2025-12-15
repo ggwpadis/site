@@ -11,9 +11,12 @@ html, body, #root {
   overflow-x: hidden; /* убираем горизонтальный скролл */
 }
 
+body, h1, h2, h3, h4, h5, h6, p, a, button {
+  font-family: 'Porsche Next', system-ui, sans-serif;
+}
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Porsche Next', system-ui, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
