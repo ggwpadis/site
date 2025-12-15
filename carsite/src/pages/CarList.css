@@ -2,25 +2,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
+  padding-bottom: 40px;
   font-family: "Porsche Next", "Arial Narrow", Arial, "Heiti SC", SimHei, sans-serif;
 }
 
 .carlist-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* центрируем всё по горизонтали */
-  padding: 40px;
+  align-items: center; 
   font-family: "Porsche Next", "Arial Narrow", Arial, "Heiti SC", SimHei, sans-serif;
 }
 
 .car-cards {
   display: flex;
-  justify-content: center; /* центрируем сами карточки */
+  justify-content: center; 
   flex-wrap: wrap;
   gap: 20px;
   width: 100%;
-  max-width: 1200px; /* ограничение по ширине */
+  max-width: 1200px; 
 }
 
 
