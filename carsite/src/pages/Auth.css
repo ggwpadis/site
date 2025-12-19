@@ -1,0 +1,44 @@
+.auth-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #1f1f1f;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Porsche Next", Arial, sans-serif;
+  }
+  
+  .auth-form h1 {
+    margin-bottom: 20px;
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .auth-form button {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: #646cff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .auth-form button:hover {
+    background-color: #535bf2;
+  }
+  

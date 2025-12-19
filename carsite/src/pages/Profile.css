@@ -1,0 +1,50 @@
+.profile-container {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #111;
+    color: #fff;
+    border-radius: 14px;
+    font-family: "Porsche Next", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  }
+  
+  .profile-container h1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  
+  .profile-info {
+    margin-bottom: 30px;
+  }
+  
+  .profile-info p {
+    margin: 12px 0;
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .profile-info b {
+    color: #aaa;
+    font-weight: 400;
+  }
+  
+  .profile-btn {
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: #e10600;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .profile-btn:hover {
+    background-color: #b90000;
+    transform: translateY(-2px);
+  }
+  
