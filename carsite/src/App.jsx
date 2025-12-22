@@ -13,6 +13,7 @@ import UpdateOrder from "./pages/UpdateOrder";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
+import Model from "./pages/Model";
 
 // Компоненты
 import Header from "./components/Header";
@@ -46,6 +47,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/cars" element={<CarList />} />
           <Route path="/cars/:id" element={<CarDetail />} />
+          <Route path="/models/:model" element={<Model />} />
+
 
           {/* Корзина и заказы */}
           <Route path="/basket" element={<BasketList user={user} />} />

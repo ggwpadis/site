@@ -19,18 +19,14 @@ export default function Profile() {
 
   return (
     <div className="profile-container">
-      <h1>Профиль</h1>
-
+      <h1>Profile</h1>
       <div className="profile-info">
-        <p><b>Имя:</b> {user.firstName}</p>
-        <p><b>Фамилия:</b> {user.lastName}</p>
+        <p><b>First Name:</b> {user.firstName}</p>
+        <p><b>Last Name:</b> {user.lastName}</p>
         <p><b>Email:</b> {user.email}</p>
-        <p><b>Телефон:</b> {user.phone}</p>
+        <p><b>Phone:</b> {user.phone}</p>
       </div>
-
-      <button className="profile-btn" onClick={logout}>
-        Выйти
-      </button>
+      <button className="profile-btn" onClick={logout}>Logout</button>
     </div>
   );
 }

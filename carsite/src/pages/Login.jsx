@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./Auth.css";
 
 export default function Login() {
@@ -9,42 +9,28 @@ export default function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-
     const savedUser = JSON.parse(localStorage.getItem("user"));
 
-    if (
-      savedUser &&
-      savedUser.email === email &&
-      savedUser.password === password
-    ) {
+    if (savedUser && savedUser.email === email && savedUser.password === password) {
       localStorage.setItem("isAuth", "true");
       navigate("/profile");
     } else {
-      alert("Неверный email или пароль");
+      alert("Incorrect email or password");
     }
   };
 
   return (
+    <div className="auth-container">
+
     <form className="auth-form" onSubmit={handleLogin}>
-      <h1>Вход</h1>
-
-      <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-      />
-
-      <input
-        type="password"
-        placeholder="Пароль"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        required
-      />
-
-      <button type="submit">Войти</button>
+      <h1>Login</h1>
+      <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+      <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+      <button type="submit">Sign In</button>
+      <p>
+        Don't have an account? <Link to="/register">Register</Link>
+      </p>
     </form>
+    </div>
   );
 }

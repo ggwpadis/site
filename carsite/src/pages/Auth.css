@@ -1,44 +1,102 @@
+:root {
+  --primary-color: #181314;
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --card-shadow-hover: rgba(0, 0, 0, 0.2);
+  --text-color: #010205;
+  --background: #EEEFF2;
+  font-family: "Porsche Next", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-color: var(--background);
+}
+.auth-container {
+  display: flex;
+  justify-content: center; /* центр по горизонтали */
+  align-items: center;     /* центр по вертикали */
+  min-height: 100vh;       /* занимает всю высоту экрана */
+  background-color: var(--background);
+}
+
 .auth-form {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 30px;
-    background: #1f1f1f;
-    color: #fff;
-    border-radius: 10px;
-    text-align: center;
-    font-family: "Porsche Next", Arial, sans-serif;
-  }
-  
-  .auth-form h1 {
-    margin-bottom: 20px;
-  }
-  
-  .auth-form {
-    display: flex;
+  width: 100%;
+  max-width: 470px;
+  padding: 50px 60px; 
+  background: var(--card-bg);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.auth-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px var(--card-shadow-hover);
+}
+
+.auth-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-left: 0%;
+  margin-top: auto;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  color: var(--text-color);
+  background-color: #F8F8F8; 
+  font-family: "Arial Narrow";
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.auth-form input:focus {
+  border-color: var(--primary-color);
+}
+
+.auth-form button {
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.auth-form button:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+.auth-form p {
+  text-align: center;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.auth-form a {
+  color: #d5001c;
+  text-decoration: none;
+}
+
+.auth-form a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .form-row {
     flex-direction: column;
   }
-  
-  .auth-form input {
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 6px;
-    border: none;
-    font-size: 1rem;
-    outline: none;
-  }
-  
-  .auth-form button {
-    padding: 12px;
-    border-radius: 6px;
-    border: none;
-    background-color: #646cff;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .auth-form button:hover {
-    background-color: #535bf2;
-  }
-  
+}

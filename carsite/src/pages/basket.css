@@ -1,49 +1,166 @@
+
+:root {
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --card-shadow-hover: rgba(0, 0, 0, 0.2);
+  --text-color: #333;
+  --primary-color: #181314;
+  background-color: #EEEFF2;
+  font-family: "Porsche Next", "Arial Narrow", Arial, sans-serif;
+}
+
 .basket-container {
-    min-height: 100vh;
-    background: #0f0f0f;
-    color: #fff;
-    padding: 40px;
-  }
-  
-  .basket-card {
-    background: #1c1c1c;
-    padding: 20px;
-    border-radius: 12px;
-    margin: 15px 0;
-  }
-  
-  .basket-actions {
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
-  }
-  
-  .basket-actions a,
-  .basket-actions button,
-  .btn {
-    background: #646cff;
-    color: #fff;
-    padding: 8px 14px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  
-  .basket-actions button {
-    background: #ff4d4d;
-  }
-  
-  .basket-form {
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .basket-form input {
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-  }
-  
+  padding: 60px 20px;
+  max-width: 1400px;
+  min-height: 100vh;
+}
+
+.basket-container h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: rgb(1, 2, 5);
+  text-align: start;
+  margin: 80px 50px 60px;
+}
+
+.basket-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  padding: 0 50px;
+  margin-top: 40px;
+}
+
+.basket-card {
+  width: 100%;
+  max-width: 400px;
+  height: 375px;
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  overflow: visible;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+    box-shadow 0.4s ease;
+  box-shadow: 0 10px 20px var(--card-shadow);
+}
+
+.basket-card2:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px var(--card-shadow-hover);
+}
+
+.basket-image {
+  position: absolute;
+  left: 50%;
+  margin-top: 20px;
+  transform: translateX(-50%);
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+  z-index: 2;
+}
+
+.basket-card2:hover .basket-image {
+  transform: translateX(-50%) scale(1.05);
+}
+
+p{
+    color: rgb(1, 2, 5);
+    font-size: 22px;
+    font-family: "Arial Narrow";
+    font-weight: 400;
+    line-height: 29.94px;
+    margin: 0%;
+    padding: 5px 20px;
+}
+
+
+
+.basket-actions {
+  display: flex;
+  justify-content: center;
+  padding: 0 30px;
+  margin-top: 20px;
+}
+
+.basket-actions button {
+  width: 164.7px;
+  height: 54px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-family: "Porsche Next", "Arial Narrow", Arial, "Heiti SC", SimHei, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.basket-actions button:hover {
+  background-color: #333;
+}
+
+.total {
+  text-align: center;
+  margin: 60px 0;
+  font-size: 44px;
+  font-weight: 700;
+  color: rgb(1, 2, 5);
+}
+
+.empty-basket {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 100px;
+}
+
+.basket-container .btn {
+  display: inline-block;
+  margin: 20px auto 0; 
+  padding: 12px 24px; 
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  text-align: center;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.basket-container .btn:hover {
+  background-color: #333;
+  transform: translateY(-2px); 
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px; 
+}
+
+
+.total {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #f8f8f8, #e6e6e6); 
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Porsche Next", "Arial Narrow", Arial, sans-serif;
+}
+
+.total h3 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: #181314; 
+}
+
+
